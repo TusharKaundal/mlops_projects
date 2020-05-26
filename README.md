@@ -17,5 +17,5 @@ This Project is all about integration of Machine Learning with Devops i.e Contin
 
 * Job 6 : Job 6 will monitor job3 if the container fails due to any reason ,it will automatically start the container again and trigger job 1
 
-## For about Project
+## For more about Project
 [Click Here](https://www.linkedin.com/pulse/integration-devops-ml-cnn-model-tushar-kaundal)
