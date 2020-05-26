@@ -3,6 +3,9 @@ from keras.layers import Conv2D
 from keras.layers import MaxPooling2D,Flatten,Activation,Dense
 from keras.models import Sequential
 
+#epoch
+epoch=4
+
 
 model= Sequential()
 
@@ -17,6 +20,8 @@ model.add(MaxPooling2D(pool_size=(2,2)))
 
 
 #adding more layers
+
+
 
 
 
@@ -62,8 +67,8 @@ test_set = test_datagen.flow_from_directory(
         batch_size=32,
         class_mode='binary')
 		
-model1=model.fit(train_set,epochs=10,validation_data=test_set,verbose=1)
-accu=model1.history['accuracy'][9]
+model1=model.fit(train_set,epochs=epoch,validation_data=test_set,verbose=1)
+accu=model1.history['accuracy'][epoch-1]
 accu=round(accu*100)
 accu=int(accu)
 f=open("accuracy.txt", "w+")

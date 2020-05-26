@@ -1,6 +1,7 @@
 new_file = open("/root/MlopsProject/cnndogandcatmodel.py","rt")
 data = new_file.read()
-data = data.replace('#adding more layers\n','#adding more layers\nmodel.add(Conv2D(100,(3,3)))\nmodel.add(Activation(\'relu\'))\nmodel.add(MaxPooling2D(pool_size=(2,2)))\n\n')
+data = data.replace('#epoch\nepoch=4','#changed epoch\nepoch=10')
+data = data.replace('#adding more layers\n','#adding more layers\nmodel.add(Conv2D(100,(3,3)))\nmodel.add(Activation(\'relu\'))\nmodel.add(MaxPooling2D(pool_size=(2,2)))\n\nmodel.add(Conv2D(100,(3,3)))\nmodel.add(Activation(\'relu\'))\nmodel.add(MaxPooling2D(pool_size=(2,2)))\n\n')
 new_file.close()
 new_file=open("/root/MlopsProject/cnndogandcatmodel.py","wt")
 new_file.write(data)
