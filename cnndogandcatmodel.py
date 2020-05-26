@@ -3,8 +3,8 @@ from keras.layers import Conv2D
 from keras.layers import MaxPooling2D,Flatten,Activation,Dense
 from keras.models import Sequential
 
-#epoch
-epoch=4
+#changed epoch
+epoch=10
 
 
 model= Sequential()
@@ -20,6 +20,14 @@ model.add(MaxPooling2D(pool_size=(2,2)))
 
 
 #adding more layers
+model.add(Conv2D(100,(3,3)))
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2,2)))
+
+model.add(Conv2D(100,(3,3)))
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2,2)))
+
 
 
 
