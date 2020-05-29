@@ -13,7 +13,7 @@ This Project is all about integration of Machine Learning with Devops i.e Contin
 
 * Job 4 : If cnndogandcatmodel.py runs successfully but give less accuracy then jenkins should automatically tweak the code in order to increase the accuracy.To achive this jenkins will push tweakingmodel.py that will add more layer to cnndogandcatmodel.py .After tweaking the model it will trigger job3 which will again train the model upto the desired accuracy.
 
-* Job 5 : This job will send notification through mail as soon as jenkins succeed in achieving desired accuracy. It will notify developer the CNN model with desired accuracy is achieved.
+* Job 5 : This job will send notification through mail as soon as jenkins succeed in achieving desired accuracy. It will notify developer the CNN model with desired accuracy is achieved and uploaded to your repository.
 
 * Job 6 : Job 6 will monitor job3 if the container fails due to any reason ,it will automatically start the container again and trigger job 1
 
